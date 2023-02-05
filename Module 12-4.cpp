@@ -29,5 +29,5 @@ int main()
     }
 
     int initialNumber = (summ - 105) / 15;
-    std::cout << "Initial number: " << apartmentNumber << std::endl;
+    std::cout << "Initial number: " << initialNumber << std::endl;
 }
