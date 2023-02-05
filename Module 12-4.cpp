@@ -18,12 +18,16 @@ int main()
 {
 
     int numbers[] = {114, 111, 106, 107, 108, 105, 115, 108, 110, 109, 112, 113, 116, 117, 118};
+
+    // сумма чисел от 1 до 14
+    int summ14 = 105;
     int summ = 0;
 
     for (int i = 0; i < 15; i++)
     {
         summ += numbers[i];
     }
-            std::cout << "The apartment number " << apartmentNumber << " lives in " << listTenants[--apartmentNumber] << std::endl;
 
+    int initialNumber = (summ - 105) / 15;
+    std::cout << "Initial number: " << apartmentNumber << std::endl;
 }
