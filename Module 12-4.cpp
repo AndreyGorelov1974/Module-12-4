@@ -17,7 +17,7 @@ int numbers[15] = {114, 111, 106, 107, 108, 105, 115, 108, 110, 109, 112, 113, 1
 int main()
 {
 
-    int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 9};
+    int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14};
 
     // сумма чисел от 1 до 14
     int summ14 = 105;
@@ -28,8 +28,11 @@ int main()
         summ += numbers[i];
     }
 
-    int initialNumber = (summ - 105) / 15;
+    int initialNumber = (summ - summ14) / 15;
+    int repeatingNumber = (summ - summ14) % 15;
+
     std::cout << "Summa: " << summ << std::endl;
 
     std::cout << "Initial number: " << initialNumber << std::endl;
+    std::cout << "A repeating number: " << repeatingNumber << std::endl;
 }
